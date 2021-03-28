@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		JavaScript
+	 Create comma separated list from an array.
+	</title>
+</head>
+
+<body style="text-align:center;" id="body">
+	<h1 style="color:red;">
+			Comma Seperated list of Roll Numbers
+		</h1>
+	<p id="UP" style="font-size: 20px;
+	     font-weight: bold;">
+        </p>
+	<button onclick="Run()">
+		click here
+	</button>
+	<p id="DOWN" style="color:orange;
+					font-size: 20px;
+					font-weight: bold;">
+	</p>
+	<script>
+		var el_up = document.getElementById("UP");
+		var el_down = document.getElementById("DOWN");
+		var arr = ["01", "02", "03","04"];
+		el_up.innerHTML = 'Roll Numbers = ["' + arr[0] + '", '+ arr[1] + '", '+ arr[2] + '",'+arr[3] +'"'+ ']';
+
+		function Run() {
+                        el_down.innerHTML =
+			"Comma separated Roll Numbers = " + arr;
+		}
+	</script>
+</body>
+</html>
